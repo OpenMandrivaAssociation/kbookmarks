@@ -15,6 +15,7 @@ BuildRequires: cmake
 BuildRequires: cmake(KF5IconThemes)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5WindowSystem)
+BuildRequires: cmake(KF5XmlGui)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: qmake5
 BuildRequires: extra-cmake-modules5
