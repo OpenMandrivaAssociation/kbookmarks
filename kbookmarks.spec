@@ -19,7 +19,7 @@ BuildRequires: cmake(KF5WindowSystem)
 BuildRequires: cmake(KF5XmlGui)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: qmake5
-BuildRequires: extra-cmake-modules5
+BuildRequires: cmake(ECM)
 BuildRequires: ninja
 Requires: %{libname} = %{EVRD}
 
@@ -44,14 +44,13 @@ KBookmarks is an abstraction to bookmark handling.
 
 %prep
 %setup -q
-%cmake -G Ninja \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+%cmake_kde5
 
 %build
-ninja -C build
+%ninja -C build
 
 %install
-DESTDIR="%{buildroot}" ninja install -C build
+%ninja_install -C build
 
 L="`pwd`/%{name}.lang"
 cd %{buildroot}
