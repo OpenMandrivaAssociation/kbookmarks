@@ -19,6 +19,7 @@ BuildRequires: cmake(KF5WindowSystem)
 BuildRequires: cmake(KF5XmlGui)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5Xml)
 BuildRequires: qmake5
 BuildRequires: cmake(ECM)
 BuildRequires: ninja
