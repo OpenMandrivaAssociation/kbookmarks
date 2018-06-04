@@ -13,10 +13,15 @@ URL: http://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake
+BuildRequires: cmake(KF5CoreAddons)
 BuildRequires: cmake(KF5IconThemes)
 BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5ConfigWidgets)
+BuildRequires: cmake(KF5Codecs)
+BuildRequires: cmake(KF5WidgetsAddons)
 BuildRequires: cmake(KF5WindowSystem)
 BuildRequires: cmake(KF5XmlGui)
+BuildRequires: cmake(Qt5LinguistTools)
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5Widgets)
