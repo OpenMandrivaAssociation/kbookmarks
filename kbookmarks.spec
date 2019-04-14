@@ -30,6 +30,7 @@ BuildRequires: qmake5
 BuildRequires: cmake(ECM)
 BuildRequires: ninja
 # For QCH format docs
+BuildRequires: doxygen
 BuildRequires: qt5-assistant
 Requires: %{libname} = %{EVRD}
 
