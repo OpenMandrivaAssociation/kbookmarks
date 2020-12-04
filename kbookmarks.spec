@@ -26,6 +26,7 @@ BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5DBus)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5Xml)
+BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: qmake5
 BuildRequires: cmake(ECM)
 BuildRequires: ninja
